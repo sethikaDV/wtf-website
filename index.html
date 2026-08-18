@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHAT THE FUCK | Official Clan Portal</title>
+    <meta name="description" content="Official Portal for WHAT THE FUCK Esports Clan. Dominating Free Fire, CODM, Minecraft, Roblox, Where Winds Meet, GTA V, and Forza Horizon 5.">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- External Icon Fonts & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body data-theme="matte-black">
+
+    <!-- CANVAS INTERACTIVE GLASS PARTICLES BACKGROUND -->
+    <canvas id="glassParticleCanvas"></canvas>
+
+    <!-- DYNAMIC AMBIENT GLASS GLOW ORBS -->
+    <div class="ambient-glow-orb orb-1"></div>
+    <div class="ambient-glow-orb orb-2"></div>
+    <div class="ambient-glow-orb orb-3"></div>
+
+    <!-- FLOATING GLASS BUBBLES CONTAINER -->
+    <div class="bubble-container" id="bubbleContainer"></div>
+
+    <!-- GLASS NAVIGATION BAR -->
+    <header class="glass-nav" id="mainHeader">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-accent">WTF</span> <span class="logo-text">CLAN</span>
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#games" class="nav-link"><i class="fa-solid fa-gamepad"></i> Divisions</a>
+                <a href="#leadership" class="nav-link"><i class="fa-solid fa-crown"></i> Leader</a>
+                <a href="#roster" class="nav-link"><i class="fa-solid fa-users"></i> Roster</a>
+                <a href="#community" class="nav-link"><i class="fa-solid fa-comments"></i> Servers</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://discord.gg/zUxVCMwFm" target="_blank" class="glass-btn btn-nav-glow">
+                    <i class="fa-brands fa-discord"></i> <span>Join Discord</span>
+                </a>
+                <button class="mobile-toggle-btn" id="mobileToggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="main-wrapper">
+
+        <!-- ================= HERO SECTION ================= -->
+        <section id="hero" class="glass-card hero-card tilt-card" data-tilt>
+            <div class="glass-shimmer"></div>
+            
+            <div class="hero-banner-container">
+                <img src="bgwtf.jpg" alt="WHAT THE FUCK Clan Banner" class="hero-banner-img" id="heroBanner">
+                <div class="banner-gradient-overlay"></div>
+                <div class="live-status-pill glass-pill">
+                    <span class="status-dot pulsing"></span>
+                    <span class="status-text">OFFICIAL GUILD RECRUITMENT OPEN</span>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <h1 class="hero-title glow-text">WHAT THE FUCK</h1>
+                <p class="hero-subtitle">PREMIER MULTI-GAMING COMPETITIVE ESPORTS CLAN</p>
+                <p class="hero-description">
+                    Dominating leaderboards across competitive mobile, PC, and console titles. Built on extreme speed, tactical communication, and absolute squad synergy.
+                </p>
+
+                <!-- Clan Live Stats Counter -->
+                <div class="clan-stats-grid">
+                    <div class="stat-box glass-box">
+                        <span class="stat-value" data-target="55">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Active Members</span>
+                    </div>
+                    <div class="stat-box glass-box">
+                        <span class="stat-value" data-target="7">0</span>
+                        <span class="stat-label">Main Divisions</span>
+                    </div>
+                    <div class="stat-box glass-box">
+                        <span class="stat-value" data-target="98">0</span><span class="stat-plus">%</span>
+                        <span class="stat-label">Scrim Win Ratio</span>
+                    </div>
+                    <div class="stat-box glass-box">
+                        <span class="stat-value" data-target="24">0</span><span class="stat-plus">/7</span>
+                        <span class="stat-label">Voice Activity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SUPPORTED GAMES SECTION ================= -->
+        <section id="games" class="glass-card section-card">
+            <div class="glass-shimmer"></div>
+            <div class="section-header">
+                <h2 class="section-title"><i class="fa-solid fa-gamepad icon-glow"></i> Supported Divisions</h2>
+                <p class="section-subtitle">Official competitive sectors operated by WTF Clan</p>
+            </div>
+
+            <div class="games-grid">
+                
+                <div class="game-card glass-box-interactive tilt-card" data-tilt>
+                    <div class="game-icon-wrapper">
+                        <i class="fa-solid fa-crosshairs"></i>
+                    </div>
+                    <h3>Free Fire</h3>
+                    <p>Onetap Headshot Specialists & Ranked Guild Squads</p>
+                    <span class="game-badge glass-badge">Competitive</span>
+                </div>
+
+                <div class="game-card glass-box-interactive tilt-card" data-tilt>
+                    <div class="game-icon-wrapper">
+                        <i class="fa-solid fa-gun"></i>
+                    </div>
+                    <h3>CODM</h3>
+                    <p>Multiplayer Ranked & Battle Royale Tournament Teams</p>
+                    <span class="game-badge glass-badge">Competitive</span>
+                </div>
+
+                <div class="game-card glass-box-interactive tilt-card" data-tilt>
+                    <div class="game-icon-wrapper">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h3>Minecraft</h3>
+                    <p>Survival SMPs, Speedrunning & Hardcore PvP</p>
+                    <span class="game-badge glass-badge">Casual & PvP</span>
+                </div>
+
+                <div class="game-card glass-box-interactive tilt-card" data-tilt>
+                    <div class="game-icon-wrapper">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+                    <h3>Roblox</h3>
+                    <p>Arsenal, BedWars & Competitive Clan Battles</p>
+                    <span class="game-badge glass-badge">Community</span>
+                </div>
+
+                <div class="game-card glass-box-interactive tilt-card" data-tilt>
+                    <div class="game-icon-wrapper">
+                        <i class="fa-solid fa-fan"></i>
+                    </div>
+                    <h3>Where Winds Meet</h3>
+                    <p>Martial Arts Open World, Guild Raids & Sword PvP</p>
+                    <span class="game-badge glass-badge">Action RPG</span>
+                </div>
+
+                <div class="game-card glass-box-interactive tilt-card" data-tilt>
+                    <div class="game-icon-wrapper">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+                    <h3>GTA V</h3>
+                    <p>Crew Heists, Modded Car Meets & Street Warfare</p>
+                    <span class="game-badge glass-badge">Open World</span>
+                </div>
+
+                <div class="game-card glass-box-interactive tilt-card" data-tilt>
+                    <div class="game-icon-wrapper">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <h3>Forza Horizon 5</h3>
+                    <p>Custom Drift Clubs, Drag Leagues & Highway Meets</p>
+                    <span class="game-badge glass-badge">Racing</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= LEADERSHIP SECTION ================= -->
+        <section id="leadership" class="glass-card section-card">
+            <div class="glass-shimmer"></div>
+            <div class="section-header">
+                <h2 class="section-title"><i class="fa-solid fa-crown icon-glow"></i> Clan Leadership</h2>
+                <p class="section-subtitle">Supreme Commander & Operations Founder</p>
+            </div>
+
+            <div class="owner-featured-card glass-box-large tilt-card" data-tilt>
+                <div class="owner-avatar-container">
+                    <img src="sethika.jpg" alt="Clan Owner Avatar" class="owner-avatar-img">
+                    <div class="owner-glow-ring"></div>
+                </div>
+
+                <div class="owner-info">
+                    <div class="owner-header-row">
+                        <h3 class="owner-name">Sethika</h3>
+                        <span class="role-pill pill-owner glass-pill">
+                            <i class="fa-solid fa-shield-halved"></i> CLAN OWNER
+                        </span>
+                    </div>
+
+                    <p class="owner-bio">
+                        Head Operations Director & Founder of WTF Clan. Overseeing all 7 competitive game sectors, managing scrims, tournament entries, and community administration.
+                    </p>
+
+                    <div class="owner-details-grid">
+                        <div class="detail-box">
+                            <span class="lbl">Primary Role</span>
+                            <span class="val">Supreme Leader</span>
+                        </div>
+                        <div class="detail-box">
+                            <span class="lbl">WhatsApp Contact</span>
+                            <span class="val highlight">+94 78 993 2878</span>
+                        </div>
+                        <div class="detail-box">
+                            <span class="lbl">Current Status</span>
+                            <span class="val online"><i class="fa-solid fa-circle"></i> Online</span>
+                        </div>
+                    </div>
+
+                    <div class="owner-actions">
+                        <a href="https://wa.me/94789932878?text=Hello%20Sethika,%20I%20want%20to%20join%20WTF%20Clan" target="_blank" class="glass-btn btn-whatsapp-direct">
+                            <i class="fa-brands fa-whatsapp"></i> <span>Message Owner on WhatsApp</span>
+                        </a>
+                        <a href="https://discord.gg/zUxVCMwFm" target="_blank" class="glass-btn btn-discord-direct">
+                            <i class="fa-brands fa-discord"></i> <span>Contact on Discord</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= POPULAR PLAYER ROSTER ================= -->
+        <section id="roster" class="glass-card section-card">
+            <div class="glass-shimmer"></div>
+            <div class="section-header">
+                <h2 class="section-title"><i class="fa-solid fa-users icon-glow"></i> Popular Players</h2>
+                <p class="section-subtitle">Top specialists grouped by combat roles</p>
+            </div>
+
+            <div class="roster-grid">
+
+                <!-- SNIPER CARD -->
+                <div class="player-card glass-box-interactive tilt-card" data-tilt>
+                    <div class="player-header">
+                        <div class="avatar-frame">
+                            <img src="nodp.jpg" alt="Sniper Specialist" class="player-img">
+                        </div>
+                        <span class="role-pill pill-sniper glass-pill">
+                            <i class="fa-solid fa-bullseye"></i> SNIPER
+                        </span>
+                    </div>
+                    <div class="player-body">
+                        <h4 class="player-name">ReaperX</h4>
+                        <p class="player-game-tag">Free Fire / CODM</p>
+                        
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Long Range Aim</span><span>75%</span></div>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Quickscope Speed</span><span>80%</span></div>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ONETAP CARD -->
+                <div class="player-card glass-box-interactive tilt-card" data-tilt>
+                    <div class="player-header">
+                        <div class="avatar-frame">
+                            <img src="samurai.jpg" alt="Onetap Specialist" class="player-img">
+                        </div>
+                        <span class="role-pill pill-onetap glass-pill">
+                            <i class="fa-solid fa-bolt"></i> ONETAP
+                        </span>
+                    </div>
+                    <div class="player-body">
+                        <h4 class="player-name">White</h4>
+                        <p class="player-game-tag">Free Fire / Custom Rooms / COD</p>
+                        
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Headshot Precision</span><span>87%</span></div>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 87%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Drag Shot Rate</span><span>78%</span></div>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 78%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RUSHER CARD -->
+                <div class="player-card glass-box-interactive tilt-card" data-tilt>
+                    <div class="player-header">
+                        <div class="avatar-frame">
+                            <img src="nodp.jpg" alt="Rusher Specialist" class="player-img">
+                        </div>
+                        <span class="role-pill pill-rusher glass-pill">
+                            <i class="fa-solid fa-fire"></i> RUSHER
+                        </span>
+                    </div>
+                    <div class="player-body">
+                        <h4 class="player-name">WTF MAX</h4>
+                        <p class="player-game-tag">FREE FIRE</p>
+                        
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Entry Frags</span><span>80%</span></div>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Agility & Movement</span><span>60%</span></div>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 60%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HEALER CARD -->
+                <div class="player-card glass-box-interactive tilt-card" data-tilt>
+                    <div class="player-header">
+                        <div class="avatar-frame">
+                            <img src="nodp.jpg" alt="Healer Specialist" class="player-img">
+                        </div>
+                        <span class="role-pill pill-healer glass-pill">
+                            <i class="fa-solid fa-kit-medical"></i> HEALER
+                        </span>
+                    </div>
+                    <div class="player-body">
+                        <h4 class="player-name">Yohan</h4>
+                        <p class="player-game-tag">FREE FIRE</p>
+                        
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Squad Survival</span><span>60%</span></div>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 60%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-label"><span>Revive Timing</span><span>75%</span></div>
+                                <div class="bar-bg"><div class="bar-fill" style="width: 75%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= COMMUNITY & JOIN SECTION ================= -->
+        <section id="community" class="glass-card section-card">
+            <div class="glass-shimmer"></div>
+            <div class="section-header text-center">
+                <h2 class="section-title text-center"><i class="fa-solid fa-comments icon-glow"></i> Join Clan Servers & Groups</h2>
+                <p class="section-subtitle">Get instant access to custom rooms, voice channels, and updates</p>
+            </div>
+
+            <div class="community-grid">
+
+                <!-- WHATSAPP GROUP CARD -->
+                <div class="community-card glass-box-interactive whatsapp-theme tilt-card" data-tilt>
+                    <div class="comm-icon-wrapper">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp Community</h3>
+                    <p>Join our official main WhatsApp group for daily guild war alerts, strategy chats, and custom room passwords.</p>
+                    
+                    <a href="https://chat.whatsapp.com/CzqPkDXhRb86VtDxOl4C7E" target="_blank" class="glass-btn btn-whatsapp-community">
+                        <i class="fa-brands fa-whatsapp"></i> <span>Join WhatsApp Group</span>
+                    </a>
+                </div>
+
+                <!-- DISCORD SERVER CARD -->
+                <div class="community-card glass-box-interactive discord-theme tilt-card" data-tilt>
+                    <div class="comm-icon-wrapper">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                    <h3>Discord Server</h3>
+                    <p>Voice hubs for all 7 game sectors, automatic bot music, tournament tickets, and custom squad roles.</p>
+                    
+                    <a href="https://discord.gg/zUxVCMwFm" target="_blank" class="glass-btn btn-discord-community">
+                        <i class="fa-brands fa-discord"></i> <span>Join Discord Server</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 <strong class="glow-text">WHAT THE FUCK CLAN</strong>. All Rights Reserved.</p>
+            <p class="footer-subtext">Engineered with Ultra iOS Glassmorphism UI Systems.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT ANIMATION ENGINE -->
+    <script src="script.js"></script>
+</body>
+</html>
